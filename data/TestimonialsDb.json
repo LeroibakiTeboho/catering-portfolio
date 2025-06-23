@@ -1,0 +1,20 @@
+[
+    { 
+      "id": 1, 
+      "text": "The best catering experience we've ever had! The food was exceptional and the service impeccable.", 
+      "author": "'Sarah J.'",
+      "event":" 'Corporate Gala'"
+    },
+    { 
+      "id": 2, 
+      "text": "Exceptional flavors and presentation. Our guests couldn't stop raving about the menu.", 
+      "author": "Michael T.",
+      "event": "Wedding Reception"
+    },
+    { 
+      "id": 3, 
+      "text": "Professional, creative, and absolutely delicious. Savor Catering made our event unforgettable.", 
+      "author": "Jennifer L.",
+      "event": "Charity Fundraiser"
+    }
+  ]
