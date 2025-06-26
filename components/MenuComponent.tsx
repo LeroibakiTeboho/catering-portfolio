@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MenuItemsDb from "@/data/MenuItemsDb.json";
 
 const MenuComponent = () => {
