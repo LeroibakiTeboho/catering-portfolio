@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import HeroComponent from "@/components/HeroComponent";
 import MenuComponent from "@/components/MenuComponent";
 import ProcessComponent from "@/components/ProcessComponent";

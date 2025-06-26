@@ -20,7 +20,7 @@ const AboutComponent = () => {
             }}
           ></div>
           <div className="absolute -bottom-6 -right-6 bg-[#d4a056] w-24 h-24 rounded-full flex items-center justify-center">
-            <span className="text-white text-6xl font-serif">"</span>
+            <span className="text-white text-6xl font-serif">&ldquo;</span>
           </div>
         </motion.div>
 

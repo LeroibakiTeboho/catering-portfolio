@@ -31,16 +31,9 @@
     "price": "$9",
     "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
+
   {
     "id": 5,
-    "name": "Caprese Skewers",
-    "category": "appetizers",
-    "description": "Fresh mozzarella, cherry tomatoes, basil",
-    "price": "$11",
-    "image": "https://images.unsplash.com/photo-1606755699178-9d77a0d1b0a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
-  },
-  {
-    "id": 6,
     "name": "Wild Mushroom Risotto",
     "category": "entrees",
     "description": "Arborio rice with wild mushrooms and parmesan",
@@ -48,7 +41,7 @@
     "image": "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Lemon Tart",
     "category": "desserts",
     "description": "Zesty lemon curd in a buttery crust",
@@ -56,7 +49,7 @@
     "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Craft Cocktails",
     "category": "drinks",
     "description": "Signature cocktails with premium spirits",
