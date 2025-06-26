@@ -5,7 +5,6 @@ import TestimonialsDb from "@/data/TestimonialsDb.json";
 
 const MenuComponent = () => {
   const [activeCategory, setActiveCategory] = useState("all");
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   // Filter menu items
   const filteredItems =
@@ -13,14 +12,6 @@ const MenuComponent = () => {
       ? MenuItemsDb
       : MenuItemsDb.filter((item) => item.category === activeCategory);
 
-  // Auto-advance testimonials
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % TestimonialsDb.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
   return (
     <div className="py-20 px-4 max-w-7xl mx-auto bg-white">
       <div className="text-center mb-16">
@@ -87,15 +78,6 @@ const MenuComponent = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        <div className="mt-12 max-w-2xl mx-auto text-center">
-          <blockquote className="text-lg italic text-gray-700">
-            {TestimonialsDb[currentTestimonial].text}
-          </blockquote>
-          <p className="mt-4 text-sm text-gray-500">
-            — {TestimonialsDb[currentTestimonial].author}
-          </p>
         </div>
       </div>
     </div>
