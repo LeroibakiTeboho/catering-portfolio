@@ -4,7 +4,7 @@
     "name": "Truffle Arancini",
     "category": "appetizers",
     "description": "Risotto balls with black truffle aioli",
-    "price": "$14",
+    "price": "R248",
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
@@ -12,15 +12,15 @@
     "name": "Herb-Crusted Salmon",
     "category": "entrees",
     "description": "Wild salmon with seasonal vegetables",
-    "price": "$28",
-    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" 
+    "price": "R496",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
     "id": 3,
     "name": "Chocolate Soufflé",
     "category": "desserts",
     "description": "Warm chocolate soufflé with vanilla ice cream",
-    "price": "$12",
+    "price": "R212",
     "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Berry Mocktail",
     "category": "drinks",
     "description": "Seasonal berries with mint and lime",
-    "price": "$9",
+    "price": "R159",
     "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
 
@@ -37,7 +37,7 @@
     "name": "Wild Mushroom Risotto",
     "category": "entrees",
     "description": "Arborio rice with wild mushrooms and parmesan",
-    "price": "$22",
+    "price": "R389",
     "image": "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
@@ -45,7 +45,7 @@
     "name": "Lemon Tart",
     "category": "desserts",
     "description": "Zesty lemon curd in a buttery crust",
-    "price": "$10",
+    "price": "R177",
     "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   },
   {
@@ -53,7 +53,7 @@
     "name": "Craft Cocktails",
     "category": "drinks",
     "description": "Signature cocktails with premium spirits",
-    "price": "$15",
+    "price": "R265",
     "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
   }
 ]

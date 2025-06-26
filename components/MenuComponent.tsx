@@ -88,6 +88,15 @@ const MenuComponent = () => {
             </motion.div>
           ))}
         </div>
+
+        <div className="mt-12 max-w-2xl mx-auto text-center">
+          <blockquote className="text-lg italic text-gray-700">
+            {TestimonialsDb[currentTestimonial].text}
+          </blockquote>
+          <p className="mt-4 text-sm text-gray-500">
+            — {TestimonialsDb[currentTestimonial].author}
+          </p>
+        </div>
       </div>
     </div>
   );

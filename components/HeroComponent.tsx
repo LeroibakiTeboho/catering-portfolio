@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const CTAComponent = () => {
+const HeroComponents = () => {
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [bookingForm, setBookingForm] = useState({
     name: "",
@@ -39,30 +39,44 @@ const CTAComponent = () => {
   };
 
   return (
-    <div className="py-20 bg-gradient-to-r from-amber-500 to-orange-500 text-white">
-      <div className="max-w-4xl mx-auto text-center px-4">
-        <motion.h2
-          className="text-4xl md:text-5xl font-serif mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+    <div className="relative h-screen flex items-center justify-center bg-gradient-to-r from-amber-50 to-orange-50 overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center opacity-20"></div>
+
+      <motion.div
+        className="text-center px-4 z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <motion.h1
+          className="text-5xl md:text-7xl font-serif font-bold text-amber-900 mb-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
         >
-          Ready to Experience Exceptional Catering?
-        </motion.h2>
-        <p className="text-xl mb-10 max-w-2xl mx-auto">
-          Book a private tasting session and let us create a custom menu for
-          your special event.
-        </p>
+          Savor Catering
+        </motion.h1>
+        <motion.p
+          className="text-xl md:text-2xl text-amber-800 max-w-2xl mx-auto mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          Elegant Flavors. Exceptional Service.
+        </motion.p>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-white text-[#d4a056] px-8 py-4 text-lg font-semibold rounded-full shadow-lg"
+          className="bg-[#d4a056] text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:bg-[#b8863e] transition-colors"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.8 }}
           onClick={() => setShowBookingModal(true)}
         >
-          Schedule Your Tasting
+          Book a Tasting Session
         </motion.button>
-      </div>
+      </motion.div>
+
       {/* Booking Modal */}
       {showBookingModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
@@ -99,7 +113,7 @@ const CTAComponent = () => {
                 </button>
               </div>
 
-              <form onSubmit={handleBookingSubmit} className="text-gray-700">
+              <form onSubmit={handleBookingSubmit}>
                 <div className="mb-4">
                   <label className="block text-gray-700 mb-2" htmlFor="name">
                     Full Name
@@ -193,4 +207,4 @@ const CTAComponent = () => {
   );
 };
 
-export default CTAComponent;
+export default HeroComponents;
