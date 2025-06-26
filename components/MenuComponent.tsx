@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import MenuItemsDb from "@/data/MenuItemsDb.json";
-import TestimonialsDb from "@/data/TestimonialsDb.json";
 
 const MenuComponent = () => {
   const [activeCategory, setActiveCategory] = useState("all");
