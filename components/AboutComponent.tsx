@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 const AboutComponent = () => {
@@ -14,13 +15,20 @@ const AboutComponent = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div
+          {/* <div
             className="bg-cover bg-center h-96 rounded-lg shadow-xl"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80')",
+                "url('/chef.avif')",
             }}
-          ></div>
+          ></div> */}
+          <Image
+            src="/chef.avif"
+            height={600}
+            width={600}
+            alt="Picture of the author"
+            className="rounded-lg shadow-xl"
+          />
           <div className="absolute -bottom-6 -right-6 bg-[#d4a056] w-24 h-24 rounded-full flex items-center justify-center">
             <span className="text-white text-6xl font-serif">&ldquo;</span>
           </div>
@@ -169,24 +177,24 @@ const AboutComponent = () => {
                     possible.
                   </p>
                   <p className="mb-4 text-gray-700">
-                    Chef Alexandra&apos;s culinary style is characterized by clean,
-                    vibrant flavors and elegant presentation. She specializes in
-                    creating custom menus that reflect each client&apos;s unique
-                    vision while accommodating diverse dietary needs. Her
-                    passion for mentorship has also led to the development of a
-                    thriving apprenticeship program that trains the next
-                    generation of culinary talent.
+                    Chef Alexandra&apos;s culinary style is characterized by
+                    clean, vibrant flavors and elegant presentation. She
+                    specializes in creating custom menus that reflect each
+                    client&apos;s unique vision while accommodating diverse
+                    dietary needs. Her passion for mentorship has also led to
+                    the development of a thriving apprenticeship program that
+                    trains the next generation of culinary talent.
                   </p>
                   <div className="bg-[#f8f4e9] p-4 rounded-lg">
                     <h4 className="font-serif text-[#b8863e] mb-2">
                       Culinary Philosophy
                     </h4>
                     <p className="text-gray-700 italic">
-                      &ldquo;Great food begins with respect - for the ingredients, the
-                      people who produce them, and the guests we serve. My
-                      mission is to create memorable dining experiences that
-                      celebrate local abundance while pushing creative
-                      boundaries.&rdquo;
+                      &ldquo;Great food begins with respect - for the
+                      ingredients, the people who produce them, and the guests
+                      we serve. My mission is to create memorable dining
+                      experiences that celebrate local abundance while pushing
+                      creative boundaries.&rdquo;
                     </p>
                   </div>
                 </div>
