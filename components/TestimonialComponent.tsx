@@ -1,11 +1,21 @@
 import { motion } from "framer-motion";
 import TestimonialsDb from "@/data/TestimonialsDb.json";
 import { useState } from "react";
+import { SectionRef } from "@/types";
 
-const TestimonialComponent = () => {
+interface TestimonialComponentProps {
+  testimonialsRef: SectionRef;
+}
+
+const TestimonialComponent = ({
+  testimonialsRef,
+}: TestimonialComponentProps) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   return (
-    <div className="h-screen relative bg-gray-900 text-white">
+    <div
+      ref={testimonialsRef}
+      className="h-screen relative bg-gray-900 text-white"
+    >
       <div className="absolute inset-0 flex items-center justify-center">
         <motion.div
           key={currentTestimonial}

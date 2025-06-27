@@ -1,8 +1,13 @@
+import { SectionRef } from "@/types";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import MenuItemsDb from "@/data/MenuItemsDb.json";
 
-const MenuComponent = () => {
+interface MenuComponentProps {
+  menuRef: SectionRef;
+}
+
+const MenuComponent = ({ menuRef }: MenuComponentProps) => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   // Filter menu items
@@ -12,7 +17,7 @@ const MenuComponent = () => {
       : MenuItemsDb.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="py-20 px-4 max-w-7xl mx-auto bg-white">
+    <section ref={menuRef} className="py-20 px-4 max-w-7xl mx-auto bg-white">
       <div className="text-center mb-16">
         <motion.h2
           className="text-4xl font-serif text-amber-900 mb-4"
@@ -79,7 +84,7 @@ const MenuComponent = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

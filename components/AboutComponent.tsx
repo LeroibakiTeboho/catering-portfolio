@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { SectionRef } from "@/types";
 
-const AboutComponent = () => {
+interface AboutComponentProps {
+  aboutRef: SectionRef;
+}
+
+const AboutComponent = ({ aboutRef }: AboutComponentProps) => {
   const [showBiographyModal, setShowBiographyModal] = useState(false);
 
   return (
-    <div className="py-20 px-4 max-w-7xl mx-auto">
+    <div ref={aboutRef} className="py-20 px-4 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-center gap-12">
         <motion.div
           className="md:w-1/2 relative"
@@ -15,13 +20,6 @@ const AboutComponent = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {/* <div
-            className="bg-cover bg-center h-96 rounded-lg shadow-xl"
-            style={{
-              backgroundImage:
-                "url('/chef.avif')",
-            }}
-          ></div> */}
           <Image
             src="/chef.avif"
             height={600}

@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { SectionRef } from "@/types";
 
+interface ProcessComponentProps {
+  processRef: SectionRef;
+}
 
-const ProcessComponent = () => {
+const ProcessComponent = ({ processRef }: ProcessComponentProps) => {
   return (
-    <div className="py-20 bg-amber-50">
+    <div ref={processRef} className="py-20 bg-amber-50">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
           className="text-4xl font-serif text-center text-amber-900 mb-16"
