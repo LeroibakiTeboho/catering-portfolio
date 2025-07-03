@@ -1,4 +1,3 @@
-// components/Logo.tsx
 import { motion } from "framer-motion";
 
 const Logo = () => {
